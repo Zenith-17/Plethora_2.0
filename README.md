@@ -9,6 +9,8 @@
   <li>Search function has been optimized using the debouncing method.</li>
   <li>YouTube developer API has been utilized to enhance the platform.</li>
   <li>An offset has been incorporated to prevent live chat from crashing during video playback.</li>
+  <li>Dark mode.</li>
+
 </ul>
 
 <h2>Tech Stack</h2>
