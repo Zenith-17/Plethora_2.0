@@ -19,23 +19,17 @@
 </ul>
 <h2>Screen Shots</h2>
 <h3>Home Page</h3>
-
-
-<br><br>
-<h3>Video Page</h3>
-
+![Light](https://github.com/Zenith-17/Plethora_2.0/assets/99113156/bdf4b1db-769b-4691-97b5-1206deb705a5)
 
 <br><br>
-<h3>Live Chat</h3>
+<h3>Dark Mode</h3>
+![dark](https://github.com/Zenith-17/Plethora_2.0/assets/99113156/18eeb88a-238c-4a81-8c6b-8a2bf5776726)
 
-
-<br><br>
-<h3>Nested Comments</h3>
 
 
 <br>
 <h2>Live Demo</h2>
-<p>To check out the live dekstop demo of the Plethora video streaming platform <a href="https://plethora-blue.vercel.app/">Click Here</a>.</p>
+<p>To check out the live dekstop demo of the Plethora video streaming platform <a href="https://plethora-2-0.vercel.app/">Click Here</a>.</p>
 
 <h2>Installation</h2>
 <p>To install and run the project locally, follow these steps:</p>
