@@ -8,7 +8,6 @@ import { searchText } from "../store/reducers/videoInfo";
 import img from "../assets/Cartoon_Pic.png";
 import { Link } from "react-router-dom";  
 import Switcher from "./Switcher";
-import plethora from "../assets/Logo(584).png";
 
 const Header = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -53,9 +52,6 @@ const Header = () => {
           className="h-8 p-2 m-4 cursor-pointer dark:bg-white"
           onClick={() => dispatch(toggle())}
         />
-        <Link to="/">
-          <img alt="yt-logo" src={plethora} className="h-6 m-5 " />
-        </Link>
       </div>
       <div className=" flex">
         <div className="w-[500px] border border-gray-200 rounded-l-full p-2 my-3 shadow-md h-10  border-r-0 flex  dark:shadow-neutral-500">
