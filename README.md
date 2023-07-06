@@ -19,10 +19,14 @@
 </ul>
 <h2>Screen Shots</h2>
 <h3>Home Page</h3>
+
+
 ![Light](https://github.com/Zenith-17/Plethora_2.0/assets/99113156/bdf4b1db-769b-4691-97b5-1206deb705a5)
 
 <br><br>
 <h3>Dark Mode</h3>
+
+
 ![dark](https://github.com/Zenith-17/Plethora_2.0/assets/99113156/18eeb88a-238c-4a81-8c6b-8a2bf5776726)
 
 
