@@ -34,8 +34,6 @@
 
 
 <br>
-<h2>Live Demo</h2>
-<p>To check out the live dekstop demo of the Plethora video streaming platform <a href="https://plethora-2-0.vercel.app/">Click Here</a>.</p>
 
 <h2>Installation</h2>
 <p>To install and run the project locally, follow these steps:</p>
