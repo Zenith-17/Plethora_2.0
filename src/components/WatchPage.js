@@ -6,30 +6,31 @@ import RelatedSuggestions from "./RelatedSuggestions";
 import { COMMENTS_API, SEARCH_BY_ID } from "../helper/constant";
 import CommentsCard from "./CommentsCard";
 import { addDetails } from "../store/reducers/videoInfo";
+import LiveChat from "./LiveChat";
 
-
+//the page that appears for individual video
 const WatchPage = () => {
   const [searchParams] = useSearchParams();
   const [movieId, setMovieId] = useState(searchParams.get("v"));
   const [videoInfo, setVideoInfo] = useState([]);
   const [showDescription, setShowDescription] = useState(false);
   const [comments, setComments] = useState([]);
-  const { id } = useSelector((store) => store.details);
+  const { id } = useSelector((store) => store.details); //subscribing to details part of the store
 
   const dispatch = useDispatch();
 
   useEffect(() => {
     setMovieId(searchParams.get("v"));
-    // eslint-disable-next-line
+   
   }, [id]);
 
-  useEffect(() => {
+  useEffect(() => { //doing all the tasks with side effects in useEffect hook
     setMovieId(searchParams.get("v"));
     dispatch(closetoggle());
     dispatch(addDetails(movieId));
     movieDetailsById();
     getComments();
-    // eslint-disable-next-line
+
   }, [movieId]);
 
   const movieDetailsById = async () => {
@@ -46,10 +47,10 @@ const WatchPage = () => {
 
   return (
     <div className=" flex justify-center">
-      <div className="m-2 p-3 mx-24 my-5 w-[600px]">
+      <div className=" p-3 mx-24 my-5 w-[600px]">
         <iframe
-          width="600"
-          height="300"
+          width="900"
+          height="500"
           autoFocus
           src={
             "https://www.youtube.com/embed/" + movieId + "?autoplay=1&mute=1&rel=0&loop=1"
@@ -61,7 +62,7 @@ const WatchPage = () => {
         <div
           className={
             " bg-gray-100 shadow-lg rounded-2xl  dark:bg-gray-800" +
-            (showDescription ? " h-auto " : " h-28 overflow-hidden ")
+            (showDescription ? " h-auto w-[56rem] " : " h-28 w-[56rem] overflow-hidden ")
           }
         >
           <h1 className="font-bold p-2 ">Description : </h1>
@@ -74,7 +75,7 @@ const WatchPage = () => {
           </h3>
           <p className="p-2 ">{videoInfo?.description}</p>
         </div>
-        <div className="border border-gray-300 my-4 "></div>
+        <div className="border border-gray-300 my-4"></div>
         <div>
           <h1 className="font-bold p-2">Comments : </h1>
           {comments?.map((comments) => (
@@ -82,8 +83,9 @@ const WatchPage = () => {
           ))}
         </div>
       </div>
-      <div>
-        <RelatedSuggestions />
+      <div  className=" ml-64">
+        <LiveChat/> 
+        <RelatedSuggestions className=" overflow-y-hidden" />
       </div>
     </div>
   );
