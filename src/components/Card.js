@@ -4,11 +4,12 @@ import formatViewCount from "../helper/formatViewCount";
 import uploadTime from "../helper/uploadTime";
 
 const Card = ({ videos }) => {
+  //?. is conditional rendering
   const viewCount = videos?.statistics?.viewCount;
   const formattedViewCount = formatViewCount(viewCount ? viewCount : "N/A");
 
   const title = videos?.snippet?.title;
-  const maxLength = 85;
+  const maxLength = 85; //maximum permissable length
   const croppedTitle = cropTitle(title, maxLength);
 
   const publishedAt = videos?.snippet?.publishedAt;
