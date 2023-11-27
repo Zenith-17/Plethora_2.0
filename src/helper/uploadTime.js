@@ -1,3 +1,4 @@
+//to show the time of upload in cards
 function uploadTime(publishedAt) {
   // Get the current time
   const currentTime = new Date();
