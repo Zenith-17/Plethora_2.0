@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addDetails } from "../store/reducers/videoInfo.js";
 import Shimmer from "./Shimmer.js";
 
+//to search for the videos specified in search
 const SearchPage = () => {
   const [videos, setVideos] = useState([]);
 
