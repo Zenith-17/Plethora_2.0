@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 import { addDetails } from "../store/reducers/videoInfo.js";
 import Shimmer from "./Shimmer.js";
 
+//container for videos
 const VideoContainer = () => {
   const [videos, setVideos] = useState([]);
 
