@@ -35,7 +35,9 @@ const ShortsPage = () => {
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
-            ></iframe>
+            >
+               {/* iframe (short for "inline frame") is an HTML element that allows you to embed another HTML document or webpage within the current document. It is essentially a window into another web page, enabling you to display content from a different source within your React application. */}
+            </iframe>
             <div className="flex flex-col gap-10 mt-36 ml-3">
               <span className="material-symbols-outlined text-2xl bg-gray-100 border rounded-full p-2 cursor-pointer  dark:bg-gray-800">
                 thumb_up
