@@ -1,5 +1,6 @@
 import React from "react";
 
+//display comments for each video
 const CommentsCard = ({ comments }) => {
   return (
     <div className="p-2 m-2 flex  w-[600px] overflow-hidden ">
