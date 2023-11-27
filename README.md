@@ -22,14 +22,29 @@
 <h2>Screen Shots</h2>
 <h3>Home Page</h3>
 
+![Screenshot (914)](https://github.com/Zenith-17/AJ/assets/99113156/ec0e7f83-059c-435c-bdbd-fbc424baf935)
 
-![Light](https://github.com/Zenith-17/Plethora_2.0/assets/99113156/bdf4b1db-769b-4691-97b5-1206deb705a5)
+
 
 <br><br>
 <h3>Dark Mode</h3>
 
 
-![dark](https://github.com/Zenith-17/Plethora_2.0/assets/99113156/18eeb88a-238c-4a81-8c6b-8a2bf5776726)
+![Screenshot (913)](https://github.com/Zenith-17/AJ/assets/99113156/0be4e17f-5a3f-4294-883b-2371c8d0946d)
+
+
+
+
+
+<h3>Watch Page</h3>
+
+
+![Screenshot (916)](https://github.com/Zenith-17/AJ/assets/99113156/e66b1c09-4170-402d-a781-bcf18e30e9fd)
+
+
+<h3>Watch Page Full Screen</h3>
+
+![Screenshot (915)](https://github.com/Zenith-17/AJ/assets/99113156/f7a2f60a-6e51-497e-b75f-e610895765c9)
 
 
 
