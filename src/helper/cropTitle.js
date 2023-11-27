@@ -1,10 +1,16 @@
-//this is will trim down the title if length of the title is greater than the given offset in the constants file
-function cropTitle(title, maxLength) {
-    if (title.length <= maxLength) {
-      return title;
-    } else {
-      return title.substring(0, maxLength) + '...';
+//foprmatting the view count of each card
+function formatViewCount(viewCount) {
+    
+  const count = Number(viewCount);
+      if (count >= 1000000) {
+      return (count / 1000000).toFixed(1) + "M";
     }
+  
+    if (count >= 1000) {
+      return (count / 1000).toFixed(1) + "K";
+    }
+  
+    return count.toString();
   }
 
-export default cropTitle;
+  export default formatViewCount;
