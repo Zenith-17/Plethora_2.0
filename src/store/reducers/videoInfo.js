@@ -18,6 +18,8 @@ const videoInfo = createSlice({
   },
 });
 
+//exporting actions 
 export const { addDetails, searchText } = videoInfo.actions;
 
+//exporitng reducers
 export default videoInfo.reducer;
