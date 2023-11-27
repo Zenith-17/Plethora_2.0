@@ -4,13 +4,15 @@ import { Link } from "react-router-dom";
 import { searchFilter } from "../store/reducers/filterSlice";
 
 const ButtonList = ({ list }) => {
+  //using useDispatch hook from react-redux
   const dispatch = useDispatch();
   return (
-    <div className=" mx-4 flex flex-wrap justify-center ml-4 h-12 ">
+    <div className=" mx-4 flex flex-wrap justify-center ml-4 h-12  bg-white dark:bg-black">
       {list.map((list) => (
         <Link to={"/filter?s=" + list} key={list}>
           <button
             className="bg-gray-100 hover:bg-gray-300 px-4 m-1 w-auto h-9 rounded-xl focus:bg-black focus:text-white  dark:bg-gray-800 dark:text-gray-300 dark:focus:bg-white dark:focus:text-black  dark:hover:bg-gray-600"
+            //onClick of the button dispatch an action of searchFilter with current element as argument and this action will call the corresponding reducer function
             onClick={() => dispatch(searchFilter(list))}
           >
             {list}
