@@ -14,6 +14,8 @@ const filerSlice = createSlice({
   },
 });
 
+//exporting actions
 export const { searchFilter } = filerSlice.actions;
 
+//exporting reducers
 export default filerSlice.reducer;
