@@ -31,11 +31,13 @@ const Body = () => {
   ];
 
   return (
-    <>
+    <div className=" w-full dark:bg-black">
       <Header />
       <div className="flex">
-        <Sidebar />
-        <div>
+        <div className=" sticky z-40">
+        <Sidebar/>
+        </div>
+        <div className="absolute dark:bg-black">
           <Carousel
             infiniteLoop
             showIndicators={false}
@@ -45,10 +47,12 @@ const Body = () => {
             <ButtonList list={list} />
             <ButtonList list={list1} />
           </Carousel>
+          {/*  the Outlet component is used to render child components based on the current route. It serves as a placeholder where the components corresponding to the matched routes will be displayed.
+The Outlet component is typically used within the route hierarchy, where it acts as a container for the nested child routes. When the application navigates to a specific route, the Outlet component will render the child component associated with that route. */}
           <Outlet />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
